@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git的远程仓库 | wanglong</title>
+  <title>git的远程仓库 | 王龙的网络日志</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.配置github的ssh key.2.github创建仓库3.在本地目录中执行git remote add origin git@github.com:wanglongisme/wlHexoSource.git建立本地仓库与远程仓库的关联.添加后，远程库的名字就是origin.git push -u origin master将本地库的所有内容推送到远程库1234567H:\wlHexo\so">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git的远程仓库">
 <meta property="og:url" content="http://yoursite.com/posts/d1c65c99.html">
-<meta property="og:site_name" content="wanglong">
+<meta property="og:site_name" content="王龙的网络日志">
 <meta property="og:description" content="1.配置github的ssh key.2.github创建仓库3.在本地目录中执行git remote add origin git@github.com:wanglongisme/wlHexoSource.git建立本地仓库与远程仓库的关联.添加后，远程库的名字就是origin.git push -u origin master将本地库的所有内容推送到远程库1234567H:\wlHexo\so">
-<meta property="og:updated_time" content="2018-01-06T07:07:04.320Z">
+<meta property="og:updated_time" content="2018-01-09T12:45:35.949Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git的远程仓库">
 <meta name="twitter:description" content="1.配置github的ssh key.2.github创建仓库3.在本地目录中执行git remote add origin git@github.com:wanglongisme/wlHexoSource.git建立本地仓库与远程仓库的关联.添加后，远程库的名字就是origin.git push -u origin master将本地库的所有内容推送到远程库1234567H:\wlHexo\so">
   
-    <link rel="alternative" href="/atom.xml" title="wanglong" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="王龙的网络日志" type="application/atom+xml">
   
   
   <link rel="stylesheet" type="text/css" href="/./main.b6141b.css">
@@ -197,7 +197,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>1.配置github的ssh key.<br>2.github创建仓库<br>3.在本地目录中执行<code>git remote add origin git@github.com:wanglongisme/wlHexoSource.git</code>建立本地仓库与远程仓库的关联.添加后，远程库的名字就是origin.<br><code>git push -u origin master</code>将本地库的所有内容推送到远程库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">H:\wlHexo\source&gt;git push -u origin master</span><br><span class="line">Counting objects: 3, done.</span><br><span class="line">Writing objects: 100% (3/3), 229 bytes | 229.00 KiB/s, done.</span><br><span class="line">Total 3 (delta 0), reused 0 (delta 0)</span><br><span class="line">To github.com:wanglongisme/wlHexoSource.git</span><br><span class="line"> * [new branch]      master -&gt; master</span><br><span class="line">Branch &apos;master&apos; set up to track remote branch &apos;master&apos; from &apos;origin&apos;.</span><br></pre></td></tr></table></figure></p>
-<p>把本地库的内容推送到远程，用<code>git push</code>命令，实际上是把当前分支 master 推送到远程。<br>由于远程库是空的，我们第一次推送 master 分支时，加上了<code>-u</code>参数，Git 不但会把本地的master分支内容推送的远程新的 master 分支，还会把本地的master分支和远程的master 分支关联起来，在以后的推送或者拉取时就可以简化命令。<br><code>git push origin master</code> 本地做了<code>git commit</code>后,就可以把本地master分支的最新修改推送至GitHub.</p>
+<p>把本地库的内容推送到远程，用<code>git push</code>命令，实际上是把当前分支 master 推送到远程。<br>由于远程库是空的，我们第一次推送 master 分支时，加上了<code>-u</code>参数，Git 不但会把本地的master分支内容推送的远程新的 master 分支，还会把本地的master分支和远程的master 分支关联起来，在以后的推送或者拉取时就可以简化命令。<br><code>git push origin master</code> ，本地做了<code>git commit</code>后,就可以把本地master分支的最新修改推送至GitHub.</p>
 <p>删除远程仓库文件(不删除本地仓库文件)<br>1.<code>git rm -r --cached fileName</code>,<code>-r</code>表示递归<br>2.<code>git commit</code><br>3.<code>git push origin(建立关联时,定义的库名称) master</code></p>
 <p><code>git clone git@github.com:michaelliao/gitskills.git</code> 克隆远程库</p>
 <hr>
@@ -443,6 +443,10 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">2017</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,23 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git分支 | wanglong</title>
+  <title>git分支 | 王龙的网络日志</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="因为git的提交是一个时间线，git分支的概念和svn也有所不同，git的分支其实是一个游标，也就是HEAD，而master是一个主分支，默认情况下HEAD是指向master的。  当新建分支时，HEAD指向新建分支，即实现了主干与分支的切换，当分支需要与主干合并时，再将master游标移动到分支所在游标处，然后将HEAD指向master，即可完成合并。具体图片解释更形象，请参考git分支.">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git分支">
 <meta property="og:url" content="http://yoursite.com/posts/f88e729b.html">
-<meta property="og:site_name" content="wanglong">
+<meta property="og:site_name" content="王龙的网络日志">
 <meta property="og:description" content="因为git的提交是一个时间线，git分支的概念和svn也有所不同，git的分支其实是一个游标，也就是HEAD，而master是一个主分支，默认情况下HEAD是指向master的。  当新建分支时，HEAD指向新建分支，即实现了主干与分支的切换，当分支需要与主干合并时，再将master游标移动到分支所在游标处，然后将HEAD指向master，即可完成合并。具体图片解释更形象，请参考git分支.">
 <meta property="og:image" content="http://yoursite.com/assets/img/2018/20180105_branch9.png">
-<meta property="og:updated_time" content="2018-01-06T07:07:04.319Z">
+<meta property="og:updated_time" content="2018-01-09T12:45:35.944Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git分支">
 <meta name="twitter:description" content="因为git的提交是一个时间线，git分支的概念和svn也有所不同，git的分支其实是一个游标，也就是HEAD，而master是一个主分支，默认情况下HEAD是指向master的。  当新建分支时，HEAD指向新建分支，即实现了主干与分支的切换，当分支需要与主干合并时，再将master游标移动到分支所在游标处，然后将HEAD指向master，即可完成合并。具体图片解释更形象，请参考git分支.">
 <meta name="twitter:image" content="http://yoursite.com/assets/img/2018/20180105_branch9.png">
   
-    <link rel="alternative" href="/atom.xml" title="wanglong" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="王龙的网络日志" type="application/atom+xml">
   
   
   <link rel="stylesheet" type="text/css" href="/./main.b6141b.css">
@@ -204,9 +204,8 @@ var _hmt = _hmt || [];
 <p>当新建分支时，HEAD指向新建分支，即实现了主干与分支的切换，当分支需要与主干合并时，再将master游标移动到分支所在游标处，然后将HEAD指向master，即可完成合并。<br>具体图片解释更形象，请参考<a href="http://wiki.jikexueyuan.com/project/git-tutorial/create-and-merging-branches.html" target="_blank" rel="noopener">git分支</a>.</p>
 <hr>
 <p><code>git branch dev</code>创建分支<br><code>git checkout dev</code>切换到dev分支<br><code>git branch</code>列出所有分支，当前分支会有一个<code>*</code>号<br><code>git merge dev</code> 合并指定分支到当前分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">H:\wlHexo&gt;git merge dev</span><br><span class="line">Updating e5fffd2..bd72c17</span><br><span class="line">Fast-forward</span><br><span class="line"> source/test.txt | 1 +</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"></span><br><span class="line">//Fast-forward表示合并方式.</span><br></pre></td></tr></table></figure></p>
-<p><code>git branch -d dev</code> 删除分支dev<br><a id="more"></a></p>
-<hr>
-<p>如果master和dev都修改了同一文文件，合并时将无法执行“快速合并”，只会把各自修改的内容合并到一起，这种合并很可能冲突</p>
+<p><code>git branch -d dev</code> 删除分支dev<br><a id="more"></a><br>如果没有合并就执行删除分支的话，会提示“分支没有合并”，如果仍然想要删除的话，需要使用强制删除分支：</p>
+<h2 id="git-branch-D-lt-name-gt-强行删除。"><a href="#git-branch-D-lt-name-gt-强行删除。" class="headerlink" title="git branch -D &lt;name&gt; 强行删除。"></a><code>git branch -D &lt;name&gt;</code> 强行删除。</h2><p>如果master和dev都修改了同一文文件，合并时将无法执行“快速合并”，只会把各自修改的内容合并到一起，这种合并很可能冲突</p>
 <blockquote>
 <p>git merge dev<br>Auto-merging readme.txt<br>CONFLICT (content): Merge <font color="#ff0000">conflict</font> in readme.txt<br>Automatic merge failed; fix conflicts and then commit the result.</p>
 </blockquote>
@@ -322,11 +321,11 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/posts/e6032803.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/518e617c.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          2018-01-08
+          git如何使用bug分支
         
       </div>
     </a>
@@ -463,6 +462,10 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">2017</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
