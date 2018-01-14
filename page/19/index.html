@@ -189,6 +189,132 @@ var _hmt = _hmt || [];
     
       <!-- 加载日记模版 -->
       <!-- 日记模版 -->     
+<article id="post-2017-04-12_86" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        <!--
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/777865ac.html">2017-04-12_86</a>
+    </h1>
+  
+
+        
+        
+        <a href="/posts/777865ac.html" class="archive-article-date">
+  	<time datetime="2017-04-12T01:34:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-12 09:34</time>
+</a>
+        
+        -->
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  今天也是6点半就醒了,好神奇.生物钟这是要变得节奏啊.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <!--
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
+        		</li>
+      		
+		</ul>
+	</div>
+ 
+      
+        <a href="/posts/777865ac.html" class="archive-article-date">
+  	<time datetime="2017-04-12T01:34:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-12 09:34</time>
+</a>
+      
+      -->
+      <!--
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      -->
+      
+	<div style='overflow:hidden;width:190px;'><a href="/posts/777865ac.html" class="archive-article-date">
+  	<time datetime="2017-04-12T01:34:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-12 09:34</time>
+</a></div>
+	<!--
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+	-->
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+    
+
+  
+
+    <!-- 首页文章展示 -->
+    
+    
+       
+        
+          
+        
+      
+    
+    
+      <!-- 加载日记模版 -->
+      <!-- 日记模版 -->     
 <article id="post-2017-04-11_85" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1310,100 +1436,6 @@ var _hmt = _hmt || [];
     
 
   
-
-    <!-- 首页文章展示 -->
-    
-    
-       
-        
-      
-    
-    
-      <!-- 加载默认模版 -->
-      <article id="post-创建java线程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bd5aa4ef.html">创建java线程</a>
-    </h1>
-  
-
-        
-        <a href="/posts/bd5aa4ef.html" class="archive-article-date">
-  	<time datetime="2017-04-05T07:46:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thread thread = new Thread();</p>
-<h2 id="thread-start"><a href="#thread-start" class="headerlink" title="thread.start();"></a>thread.start();</h2><p>创建线程运行代码两种方式:<br>1.继承Thread类<br>public class MyThread extends Thread{<br> public void run(){<br>  System.out.print(“run …”);<br> }<br>}<br>new MyThread().start();<br>*也可以写匿名类<br>2.实现Runnable接口<br>public class MyRunnable implements Runnable{<br> public void run(){<br>  System.out.print(“run …”);<br> }<br>}<br>为了线程执行run方法,需要在Thread类的构造函数传入MyRunnable的实例对象<br>Thread thread = new Thread(new MyRunnable());<br>thread.strat();<br><strong>子类还是实现Runnable接口?</strong><br>更倾向于实现Runnable接口这种方法。因为线程池可以有效的管理实现了Runnable接口的线程，如果线程池满了，新的线程就会排队等候执行，直到线程池空闲出来为止。而如果线程是通过实现Thread子类实现的，这将会复杂一些。<br>有时我们要同时融合实现Runnable接口和Thread子类两种方式。例如，实现了Thread子类的实例可以执行多个实现了Runnable接口的线程。一个典型的应用就是线程池。<br><strong>注意执行线程调用start()方法,而不是run().</strong><br>run()方法的确如你所愿的被调用了。但是，事实上,run()方法并非是由刚创建的新线程所执行的，而是被创建新线程的当前线程所执行了。也就是被执行上面两行代码的线程所执行的。想要让创建的新线程执行run()方法，必须调用新线程的start方法。<br>MyRunnable runnable = new MyRunnable();<br>Thread thread = new Thread(runnable, “New Thread”); //指定线程名<br>thread.start();<br>System.out.println(thread.getName()); //获取Thread子类线程名<br>String threadName = Thread.currentThread().getName(); //获取Runnable接口的线程名字<br><strong>启动线程是有序的,但执行的顺序是无序的.</strong></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-    
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/18/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/20/">Next &raquo;</a>
@@ -1518,7 +1550,7 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color5">2017</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1526,7 +1558,7 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2017</a>
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
             
             <div class="clearfix"></div>

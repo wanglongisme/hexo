@@ -186,6 +186,113 @@ var _hmt = _hmt || [];
     
     
       <!-- 加载默认模版 -->
+      <article id="post-git分支与远程仓库协作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/bfdc69d7.html">git分支与远程仓库协作</a>
+    </h1>
+  
+
+        
+        <a href="/posts/bfdc69d7.html" class="archive-article-date">
+  	<time datetime="2018-01-08T03:32:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>当使用git克隆时，其实是git自动把本地master与远程仓库master关联起来，远程仓库默认名为origin。</p>
+</blockquote>
+<p>查看远程仓库信息<br><code>git remote -v</code> 显示远程库名称、路径、权限，当前拥有fetch和push权限。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">H:\wlHexo&gt;git remote -v</span><br><span class="line">origin  git@github.com:wanglongisme/wlHexoSource.git (fetch)</span><br><span class="line">origin  git@github.com:wanglongisme/wlHexoSource.git (push)</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>推送分支，就是把该分支上的所有本地提交推送到远程库。推送时，要指定本地分支，这样，Git 就会把该分支推送到远程库对应的远程分支上。<br><code>git push origin master</code><br>如果要推送其他分支，比如 dev，就改成：<br><code>git push origin dev</code><br>但是，并不是一定要把本地分支往远程推送，那么，哪些分支需要推送，哪些不需要呢？</p>
+<ul>
+<li>master 分支是主分支，因此要时刻与远程同步；</li>
+<li>dev 分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；</li>
+<li>bug 分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；</li>
+<li>feature 分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。<br>总之，就是在 Git 中，分支完全可以在本地自己藏着玩，是否推送，视你的心情而定！</li>
+</ul>
+</blockquote>
+        
+          <a class="article-more-a" href="/posts/bfdc69d7.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+    
+
+  
+
+    <!-- 首页文章展示 -->
+    
+    
+       
+        
+      
+    
+    
+      <!-- 加载默认模版 -->
       <article id="post-git如何使用bug分支" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1181,132 +1288,6 @@ var _hmt = _hmt || [];
     
 
   
-
-    <!-- 首页文章展示 -->
-    
-    
-       
-        
-          
-        
-      
-    
-    
-      <!-- 加载日记模版 -->
-      <!-- 日记模版 -->     
-<article id="post-2017-12-31" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        <!--
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/b1bf0f13.html">2017-12-31</a>
-    </h1>
-  
-
-        
-        
-        <a href="/posts/b1bf0f13.html" class="archive-article-date">
-  	<time datetime="2017-12-31T15:15:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31 23:15</time>
-</a>
-        
-        -->
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>上午健身房，下午回来就弄hexo，本地就搭建完了，模版还有些问题，明天调整一下。晚上开始总结今年，看年初的计划完成的怎么样，刚做完今年的总结，明年的计划就明天做吧，正好也是1号，今天太晚了。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <!--
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2018</a>
-        		</li>
-      		
-		</ul>
-	</div>
- 
-      
-        <a href="/posts/b1bf0f13.html" class="archive-article-date">
-  	<time datetime="2017-12-31T15:15:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31 23:15</time>
-</a>
-      
-      -->
-      <!--
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      -->
-      
-	<div style='overflow:hidden;width:190px;'><a href="/posts/b1bf0f13.html" class="archive-article-date">
-  	<time datetime="2017-12-31T15:15:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31 23:15</time>
-</a></div>
-	<!--
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-	-->
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-    
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1421,7 +1402,7 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color5">2017</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1429,7 +1410,7 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2017</a>
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
             
             <div class="clearfix"></div>
