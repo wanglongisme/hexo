@@ -189,6 +189,132 @@ var _hmt = _hmt || [];
     
       <!-- 加载日记模版 -->
       <!-- 日记模版 -->     
+<article id="post-2017-03-08_38" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        <!--
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/e44e663a.html">2017-03-08_38</a>
+    </h1>
+  
+
+        
+        
+        <a href="/posts/e44e663a.html" class="archive-article-date">
+  	<time datetime="2017-03-08T07:43:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-08 15:43</time>
+</a>
+        
+        -->
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  终于把图表展示弄出来了,还算满意,自动加载什么的还没做.看看明天愿意动的话弄弄,周五更新到生产上跑跑.<br>  <img src="/assets/img/2017/20170308154209.jpg" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <!--
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
+        		</li>
+      		
+		</ul>
+	</div>
+ 
+      
+        <a href="/posts/e44e663a.html" class="archive-article-date">
+  	<time datetime="2017-03-08T07:43:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-08 15:43</time>
+</a>
+      
+      -->
+      <!--
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      -->
+      
+	<div style='overflow:hidden;width:190px;'><a href="/posts/e44e663a.html" class="archive-article-date">
+  	<time datetime="2017-03-08T07:43:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-08 15:43</time>
+</a></div>
+	<!--
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+	-->
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+    
+
+  
+
+    <!-- 首页文章展示 -->
+    
+    
+       
+        
+          
+        
+      
+    
+    
+      <!-- 加载日记模版 -->
+      <!-- 日记模版 -->     
 <article id="post-2017-03-07_37" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1310,132 +1436,6 @@ var _hmt = _hmt || [];
     
 
   
-
-    <!-- 首页文章展示 -->
-    
-    
-       
-        
-          
-        
-      
-    
-    
-      <!-- 加载日记模版 -->
-      <!-- 日记模版 -->     
-<article id="post-2017-03-02_28" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        <!--
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/92e8b71f.html">2017-03-02_28</a>
-    </h1>
-  
-
-        
-        
-        <a href="/posts/92e8b71f.html" class="archive-article-date">
-  	<time datetime="2017-03-02T08:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-02 16:40</time>
-</a>
-        
-        -->
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  采集的功能又发现了几个问题. 首先既然是统计系统,自动化采集工作,那一定会用到定时器.就会涉及到采集周期等设置,比如每天二点, 每月的3号, 每周的一三五…上网翻翻资料,这些spring task都可以实现. 但流程上不知道我想的对不对,也不知道技术点该怎么实现.<br>     1.我的想法是通过html录入所有参数,然后把数据入库,这时应该创建把定时任务也创建出来,但我怎么生成定时任务呢?用反射?好像没那么简单.<br>     2.我觉得这样生成的定时任务在服务器重启时就应该销毁了, 所以重启服务器时要重新创建出所有库里的定时任务.感觉这样有点麻烦,不知道有没有其他简单有效的实现方式.<br>  这2个问题搞定了, 基本整个业务就畅通了.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <!--
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
-        		</li>
-      		
-		</ul>
-	</div>
- 
-      
-        <a href="/posts/92e8b71f.html" class="archive-article-date">
-  	<time datetime="2017-03-02T08:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-02 16:40</time>
-</a>
-      
-      -->
-      <!--
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      -->
-      
-	<div style='overflow:hidden;width:190px;'><a href="/posts/92e8b71f.html" class="archive-article-date">
-  	<time datetime="2017-03-02T08:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-02 16:40</time>
-</a></div>
-	<!--
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-	-->
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-    
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/23/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span><a class="page-number" href="/page/25/">25</a><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/25/">Next &raquo;</a>
@@ -1538,15 +1538,7 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2017</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">2018</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">uml</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1554,11 +1546,19 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color4">uml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">2017</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
             
             <div class="clearfix"></div>

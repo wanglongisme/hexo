@@ -186,6 +186,135 @@ var _hmt = _hmt || [];
     
     
       <!-- 加载默认模版 -->
+      <article id="post-java方法执行性能监测简单实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/50c63fd1.html">java方法执行性能监测简单实现</a>
+    </h1>
+  
+
+        
+        <a href="/posts/50c63fd1.html" class="archive-article-date">
+  	<time datetime="2017-02-15T04:00:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre>package about.performance.methodMonitor;
+
+public class MyMonitor {
+
+    //ThreadLocal类可以将非线程安全类转变成线程安全类
+    private static ThreadLocal record = new ThreadLocal();
+
+    //启动对某方法的监视
+    public static void begin(String method){
+        System.out.println("begin...");
+        MethodPerformace mf = new MethodPerformace(method);
+        record.set(mf);
+    }
+
+    public static void end(){
+        System.out.println("end...");
+        MethodPerformace mp = record.get();
+        mp.printPerformace();
+    }
+
+}
+</pre>
+
+<p><pre>package about.performance.methodMonitor;</pre></p>
+<p>public class MethodPerformace {<br>    private long begin;<br>    private long end;<br>    private String serviceMethod;</p>
+<pre><code>public  MethodPerformace(String serviceMethod){
+    this.serviceMethod = serviceMethod;
+    this.begin = System.currentTimeMillis();
+}
+
+public void printPerformace(){
+    end = System.currentTimeMillis();
+    long e = end - begin;
+    System.out.println(serviceMethod+&quot;执行了&quot;+e+&quot;毫秒.&quot;);
+}
+</code></pre><p>}<br><br>测试demo的main方法</p>
+<p><pre>MyMonitor.begin(“Tool.outFile”);<br>Tool.outFile(“C:\Users\long\Desktop\hpes\Desperate Housewives10.txt”);<br>MyMonitor.end();</pre><br>执行结果<br>begin…<br>File not found<br>end…<br>Tool.outFile执行了2毫秒.<br>//结合aop使用,效果会更好</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+    
+
+  
+
+    <!-- 首页文章展示 -->
+    
+    
+       
+        
+      
+    
+    
+      <!-- 加载默认模版 -->
       <article id="post-spring的ReloadableResourceBundleMessageSource定时刷新资源文件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1124,15 +1253,7 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2017</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">2018</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">uml</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1140,11 +1261,19 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+                <a href="javascript:void(0)" class="js-tag color4">uml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">2017</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
             
             <div class="clearfix"></div>
