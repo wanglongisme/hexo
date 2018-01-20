@@ -186,6 +186,102 @@ var _hmt = _hmt || [];
     
     
       <!-- 加载默认模版 -->
+      <article id="post-java反射_方法_java.lang.reflect.Method" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/78f9635.html">java反射_方法_java.lang.reflect.Method</a>
+    </h1>
+  
+
+        
+        <a href="/posts/78f9635.html" class="archive-article-date">
+  	<time datetime="2017-03-22T03:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Class rabbitClass = Rabbit.class;<br>Method[] rabbitMethodArr = rabbitClass.getMethods();</p>
+<h2 id="通过class对象获取所有public的方法对象"><a href="#通过class对象获取所有public的方法对象" class="headerlink" title="通过class对象获取所有public的方法对象"></a>通过class对象获取所有public的方法对象</h2><p>获取指定方法对象<br>Method method = rabbitClass.getMethod(“rap”,new Class[]{String.class});<br>Method method = rabbitClass.getMethod(“rap”,null); //方法没有参数</p>
+<h2 id="没有找到会抛出NoSuchMethodException"><a href="#没有找到会抛出NoSuchMethodException" class="headerlink" title="没有找到会抛出NoSuchMethodException."></a>没有找到会抛出NoSuchMethodException.</h2><p>方法参数<br>Class[] paramTypeArr = method.getParameterTypes();<br>返回类型</p>
+<h2 id="Class-returnClass-method-getReturnType"><a href="#Class-returnClass-method-getReturnType" class="headerlink" title="Class returnClass = method.getReturnType();"></a>Class returnClass = method.getReturnType();</h2><p>调用方法<br>Object returnValue = method.invoke(null, “8 mile”); //静态方法传null<br>Object returnValue = method.invoke(new Rabbit(), “8 mile”); //非静态方法需要传入class对象的实例.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+    
+
+  
+
+    <!-- 首页文章展示 -->
+    
+    
+       
+        
+      
+    
+    
+      <!-- 加载默认模版 -->
       <article id="post-Java反射_变量_java.lang.reflect.Field" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1161,135 +1257,9 @@ var _hmt = _hmt || [];
     
 
   
-
-    <!-- 首页文章展示 -->
-    
-    
-       
-        
-          
-        
-      
-    
-    
-      <!-- 加载日记模版 -->
-      <!-- 日记模版 -->     
-<article id="post-2017-03-16_49" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        <!--
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/1b79ee8.html">2017-03-16_49</a>
-    </h1>
-  
-
-        
-        
-        <a href="/posts/1b79ee8.html" class="archive-article-date">
-  	<time datetime="2017-03-16T13:48:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16 21:48</time>
-</a>
-        
-        -->
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  今天练腿到位了，下楼腿都发飘。一白天都昏沉沉的，眼睛涩的不行，晚上训练到是状态不错，不像之前，没犯困，胃也没不舒服。练腿就是爽啊，可惜没蹲腿，今天练腿的人太多，龙门架一直有人用。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <!--
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2017</a>
-        		</li>
-      		
-		</ul>
-	</div>
- 
-      
-        <a href="/posts/1b79ee8.html" class="archive-article-date">
-  	<time datetime="2017-03-16T13:48:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16 21:48</time>
-</a>
-      
-      -->
-      <!--
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      -->
-      
-	<div style='overflow:hidden;width:190px;'><a href="/posts/1b79ee8.html" class="archive-article-date">
-  	<time datetime="2017-03-16T13:48:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16 21:48</time>
-</a></div>
-	<!--
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日记//" class="article-tag-list-link color3">日记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-	-->
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-    
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/21/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/23/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/21/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/23/">Next &raquo;</a>
     </nav>
   
 
@@ -1385,11 +1355,15 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">2018</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">2016</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2018</a>
+                <a href="javascript:void(0)" class="js-tag color3">周末</a>
               </li>
              
               <li class="article-tag-list-item">
