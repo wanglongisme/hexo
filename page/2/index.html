@@ -182,6 +182,104 @@ var _hmt = _hmt || [];
     
        
         
+      
+    
+    
+      <!-- 加载默认模版 -->
+      <article id="post-责任链模式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/6208627e.html">责任链模式</a>
+    </h1>
+  
+
+        
+        <a href="/posts/6208627e.html" class="archive-article-date">
+  	<time datetime="2018-01-11T07:32:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>责任链，顾名思义就像一条链条，上面的每个节点都是一个处理者，请求在这个链条上传递，被能处理它的节点处理。之前看Tomcat时，注意到这个设计模式，<br>正好最近有个需求是我们组做zip包升级时，需要添加一些校验规则，满足规则的zip包才允许升级，感觉这个场景可以用责任链模式实现，就看了看，记录下来。</p>
+</blockquote>
+<p>该模式很简单，由3个部分组成:<br><img src="/assets/img/2018/20180111164047.jpg" alt=""></p>
+        
+          <a class="article-more-a" href="/posts/6208627e.html#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+    
+
+  
+
+    <!-- 首页文章展示 -->
+    
+    
+       
+        
           
         
       
@@ -1124,112 +1222,6 @@ var _hmt = _hmt || [];
     
 
   
-
-    <!-- 首页文章展示 -->
-    
-    
-       
-        
-       
-        
-      
-    
-    
-      <!-- 加载默认模版 -->
-      <article id="post-git的远程仓库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/d1c65c99.html">git的远程仓库</a>
-    </h1>
-  
-
-        
-        <a href="/posts/d1c65c99.html" class="archive-article-date">
-  	<time datetime="2018-01-05T07:21:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.配置github的ssh key.<br>2.github创建仓库<br>3.在本地目录中执行<code>git remote add origin git@github.com:wanglongisme/wlHexoSource.git</code>建立本地仓库与远程仓库的关联.添加后，远程库的名字就是origin.<br><code>git push -u origin master</code>将本地库的所有内容推送到远程库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">H:\wlHexo\source&gt;git push -u origin master</span><br><span class="line">Counting objects: 3, done.</span><br><span class="line">Writing objects: 100% (3/3), 229 bytes | 229.00 KiB/s, done.</span><br><span class="line">Total 3 (delta 0), reused 0 (delta 0)</span><br><span class="line">To github.com:wanglongisme/wlHexoSource.git</span><br><span class="line"> * [new branch]      master -&gt; master</span><br><span class="line">Branch &apos;master&apos; set up to track remote branch &apos;master&apos; from &apos;origin&apos;.</span><br></pre></td></tr></table></figure></p>
-<p>把本地库的内容推送到远程，用<code>git push</code>命令，实际上是把当前分支 master 推送到远程。<br>由于远程库是空的，我们第一次推送 master 分支时，加上了<code>-u</code>参数，Git 不但会把本地的master分支内容推送的远程新的 master 分支，还会把本地的master分支和远程的master 分支关联起来，在以后的推送或者拉取时就可以简化命令。<br><code>git push origin master</code> ，本地做了<code>git commit</code>后,就可以把本地master分支的最新修改推送至GitHub.</p>
-<p>删除远程仓库文件(不删除本地仓库文件)<br>1.<code>git rm -r --cached fileName</code>,<code>-r</code>表示递归<br>2.<code>git commit</code><br>3.<code>git push origin(建立关联时,定义的库名称) master</code></p>
-<p><code>git clone git@github.com:michaelliao/gitskills.git</code> 克隆远程库</p>
-<hr>
-<blockquote>
-<p>遇到的问题:<br>我打算把本地hexo里的文件放到github 仓库中,这样在使用不同电脑时,download一下source目录后重新发布就可以正常使用了.<br>但用’git commit’时,发现有2个文件夹一直无法commit.<br>原因是这两个目录中包含.git目录,应该是git识别出子目录中含有git配置,不能覆盖操作.<br>还遇到一个问题,虽然我把子目录里的.git删除了,但git add和git commit后,git push完了,提交到github的是个空的source目录.<br>解决方法: 执行一次<code>git rm -r --cached source</code>(source为子目录名称).然后执行git add-&gt;git commit-&gt;git push</p>
-</blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔/2018//" class="article-tag-list-link color5">2018</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-    
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1356,11 +1348,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">2017</a>
+                <a href="javascript:void(0)" class="js-tag color3">读书</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">读书</a>
+                <a href="javascript:void(0)" class="js-tag color5">2017</a>
               </li>
             
             <div class="clearfix"></div>
